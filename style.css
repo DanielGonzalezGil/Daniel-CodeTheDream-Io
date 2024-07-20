@@ -1,3 +1,19 @@
 body{
-    background-color: blueviolet;
+    background-color:chocolate;
 }
+
+h2{
+    margin: auto;
+}
+
+
+ul{
+    margin: 10px;
+    padding: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
