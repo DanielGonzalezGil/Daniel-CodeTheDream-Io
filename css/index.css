@@ -1,0 +1,58 @@
+/* Color pallet being used: https://lospec.com/palette-list/razz-candy */
+
+body{
+    background-color:hsl(40, 100%, 61%);
+    font-family: "Caveat";
+    color:#073467;
+}
+
+
+p{
+    text-align: left;
+    margin: 10px;
+    font-size: 20px;
+}
+
+
+
+ul{
+    margin: 10px;
+    text-align: left;
+    padding: 5px;
+    
+
+}
+
+a:link {
+    color: #ea6d6d;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: orange;
+}
+
+.card{
+    background-color: #ea6d6d;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-body {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TODO: figure out how to apply padding to the diffrent sections */
+#Project-Experince{
+}
