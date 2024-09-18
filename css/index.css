@@ -72,19 +72,28 @@ a:hover {
 }
 
 #About{
+    padding: 5px;
 }
 
 #Skills{
+    padding: 5px;
 
 }
 
 #Projects{
+    padding: 5px;
 
 }
 
 #Contact{
+    padding:5px
     
 }
+
+#messageForm{
+    padding: 5px;
+}
+
 
 /* mobile style code */
 @media (max-width: 600px) {
