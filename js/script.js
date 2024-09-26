@@ -60,8 +60,9 @@ messageForm.addEventListener('submit', getSubmittedInfo);
 
 // ----- GITHUB API HANDLING CODE -----
     // potential refactoring: use a async function
-    // potential feature: make a bootstrap card (or similer) together with the api
+    // potential feature: make a bootstrap card (or similer) together with the api so the user can click on it and go to the github repo
 const projectSection = document.getElementById("Projects");
+const projectList = projectSection.querySelector("ul");
 
 fetch("https://api.github.com/users/DanielGonzalezGil/repos")
 .then( response => {
@@ -71,15 +72,11 @@ fetch("https://api.github.com/users/DanielGonzalezGil/repos")
     return response.json(); //no need to use JSON.parse() as this already parses the response into a JS object
 })
 .then(data => {
-
     data.forEach(repoObj =>{
         const project = document.createElement('li');
-        project.innerText = repoObj['name']; //<---
-        // project.appendChild(projectSection);
-        console.log(project)
-
+        project.innerText = repoObj['name']; 
+        projectList.appendChild(project);
     });
-    console.log(data);
 })
 .catch(error => console.log(error));
 
